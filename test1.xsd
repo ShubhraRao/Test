@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema 
+attributeFormDefault="unqualified" 
+elementFormDefault="qualified" 
+xmlns:ns0="http://dcsit.net/pi/cacs_uk"
+xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="cacsLetter">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="header">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="messageId" type="xs:unsignedByte" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="cacsLetterData">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="letter_type" type="xs:string" />
+              <xs:element name="location_code" type="xs:unsignedInt" />
+              <xs:element name="account_number" type="xs:unsignedInt" />
+              <xs:element name="cust_first_name" />
+              <xs:element name="cust_last_name" type="xs:string" />
+              <xs:element name="cust_maternal_last_name" />
+              <xs:element name="company_code" type="xs:unsignedShort" />
+              <xs:element name="priv_comerc_code" type="xs:string" />
+              <xs:element name="finance_type" type="xs:unsignedByte" />
+              <xs:element name="first_name" />
+              <xs:element name="last_name" type="xs:string" />
+              <xs:element name="maternal_last_name" />
+              <xs:element name="address_line_1" type="xs:string" />
+              <xs:element name="postcode" type="xs:unsignedInt" />
+              <xs:element name="city" type="xs:string" />
+              <xs:element name="country" type="xs:string" />
+              <xs:element name="cif_nif" type="xs:string" />
+              <xs:element name="bp_id" type="xs:unsignedInt" />
+              <xs:element name="primary_home_number" type="xs:unsignedInt" />
+              <xs:element name="primary_work_number" type="xs:unsignedInt" />
+              <xs:element name="vin" type="xs:string" />
+              <xs:element name="vehicle_description" type="xs:string" />
+              <xs:element name="dealer_name" type="xs:string" />
+              <xs:element name="vehicle_license_plate" />
+              <xs:element name="bank_sort_code" type="xs:unsignedShort" />
+              <xs:element name="bank_acct_num" type="xs:unsignedInt" />
+              <xs:element name="adv_rental_amt" type="xs:string" />
+              <xs:element name="next_payment_date" type="xs:unsignedInt" />
+              <xs:element name="balance_amount" type="xs:string" />
+              <xs:element name="other_delq_amt" type="xs:string" />
+              <xs:element name="total_delinq_amount" type="xs:string" />
+              <xs:element name="num_of_downs" type="xs:string" />
+              <xs:element name="interest_delq_amt" type="xs:string" />
+              <xs:element name="other_del_SAP_amt" type="xs:string" />
+              <xs:element name="cust_addr_street" type="xs:string" />
+              <xs:element name="cust_zip_code" type="xs:unsignedInt" />
+              <xs:element name="cust_city" type="xs:string" />
+              <xs:element name="cust_phone_no" type="xs:unsignedInt" />
+              <xs:element name="IBAN" type="xs:string" />
+              <xs:element name="BIC" type="xs:string" />
+              <xs:element name="EDT_ID" />
+              <xs:element name="email_HR_employee" type="xs:string" />
+              <xs:element name="agency_name" type="xs:string" />
+              <xs:element name="address_agency" type="xs:string" />
+              <xs:element name="city_agency" type="xs:string" />
+              <xs:element name="postcode_agency" type="xs:unsignedInt" />
+              <xs:element name="email_3rd_party" type="xs:string" />
+              <xs:element name="county" />
+              <xs:element name="financial_product" />
+              <xs:element name="contract_sold_amount" />
+              <xs:element name="province_debt_buyer" />
+              <xs:element name="province_code_debt_buyer" />
+              <xs:element name="debt_buyer_phone" />
+              <xs:element name="debt_buyer_fax" />
+              <xs:element name="debt_buyer_legal_email" />
+              <xs:element name="debt_sale_date" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
